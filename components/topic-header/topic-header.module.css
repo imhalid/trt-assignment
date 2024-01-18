@@ -1,0 +1,41 @@
+.topics {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.topics a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #63676D;
+}
+
+.topicsMain {
+    font-weight: bold;
+}
+
+.topicsMain a {
+    color: #000;
+    font-weight: bold;
+}
+
+.topics ul {
+    display: flex;
+}
+
+.topics li {
+  border-right: 1px solid #22262a; /* Change color as needed */
+  padding-right: 24px; /* Add space around the border */
+  margin-left: 24px;
+}
+
+.topics li:last-child {
+  border-right: none;
+}
+
+.topics li:first-child {
+  margin-left: 0;
+}
