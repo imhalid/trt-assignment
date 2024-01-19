@@ -3,6 +3,7 @@
   margin: 0;
   list-style: none;
   text-decoration: none;
+  box-sizing: border-box;
   border: none;
   outline: none;
   background-color: transparent;
@@ -42,7 +43,7 @@
 }
 @media screen and (min-width: 87.5em) {
   .container {
-    max-width: 1252px;
+    max-width: 1352px;
     padding-right: 0;
     padding-left: 0;
   }

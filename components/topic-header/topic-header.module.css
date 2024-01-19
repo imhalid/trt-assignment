@@ -27,7 +27,7 @@
 }
 
 .topics li {
-  border-right: 1px solid #22262a; /* Change color as needed */
+  border-right: 1px solid #E1E6EB; /* Change color as needed */
   padding-right: 24px; /* Add space around the border */
   margin-left: 24px;
 }
@@ -39,3 +39,4 @@
 .topics li:first-child {
   margin-left: 0;
 }
+
