@@ -9,9 +9,9 @@ export default function Header() {
     <nav className={styles.header}>
       <div className={styles.headerContainer}>
         <div>
-        <Link href="/">
-          <Image src="/trtlogo.svg" alt="logo" width={132} height={16} />
-        </Link>
+          <Link href="/">
+            <Image src="/trtlogo.svg" alt="logo" width={132} height={16} />
+          </Link>
         </div>
         <div className={styles.headerRight}>
           <ul className={styles.headerList}>

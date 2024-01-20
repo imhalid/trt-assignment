@@ -1,5 +1,5 @@
-import styles from './articles-card.module.css';
-import Image from 'next/image';
+import styles from "./articles-card.module.css";
+import Image from "next/image";
 import { Content, Category } from "@/types/content.ts";
 
 export default function ArticlesCard({ data }: { data: Content }) {
@@ -13,7 +13,7 @@ export default function ArticlesCard({ data }: { data: Content }) {
     month: "long",
     day: "numeric",
   });
-const lastCategory = data.categories[data.categories.length - 1];
+  const lastCategory = data.categories[data.categories.length - 1];
   return (
     <div className={styles.container}>
       <Image width={406} height={234} src={newImageUrl} alt={data.title} />

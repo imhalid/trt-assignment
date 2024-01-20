@@ -1,7 +1,7 @@
-import TopicHeader from "@/components/topic-header/topic-header"
-import Hero from "@/components/hero-content/hero"
-import Popular from "@/components/popular/popular"
-import Articles from "@/components/articles/articles"
+import TopicHeader from "@/components/topic-header/topic-header";
+import Hero from "@/components/hero-content/hero";
+import Popular from "@/components/popular/popular";
+import Articles from "@/components/articles/articles";
 export default function Home() {
   return (
     <main className="container">
@@ -10,5 +10,5 @@ export default function Home() {
       <Popular />
       <Articles />
     </main>
-  )
+  );
 }

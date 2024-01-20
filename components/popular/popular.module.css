@@ -16,7 +16,7 @@
 .title {
   color: #005d99;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: 'system-ui';
+  font-family: "system-ui";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -25,28 +25,28 @@
   text-transform: uppercase;
 }
 
-.popularCardText p{
-color: #0089CC;
-font-feature-settings: 'clig' off, 'liga' off;
-font-family: 'system-ui';
-font-size: 12px;
-font-style: normal;
-font-weight: bold;
-line-height: 16px; /* 133.333% */
-letter-spacing: 1px;
-text-transform: uppercase;
+.popularCardText p {
+  color: #0089cc;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "system-ui";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .popularCardText h2 {
-  color: #22262A;
-font-feature-settings: 'clig' off, 'liga' off;
-font-family: 'Times New Roman';
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 28px; /* 155.556% */
-padding-top: 6px;
-width: 246px;
+  color: #22262a;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Times New Roman";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  padding-top: 6px;
+  width: 246px;
 }
 
 .popularCard {
@@ -58,35 +58,36 @@ width: 246px;
 }
 
 .popularCard span {
-  color:  #005D99;
-text-align: center;
-font-feature-settings: 'clig' off, 'liga' off;
-font-family: 'system-ui';
-font-size: 48px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-padding-top: 18px;
-padding-right: 16px;
+  color: #005d99;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "system-ui";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 18px;
+  padding-right: 16px;
 }
 
 .separator {
-  border-top: 1px solid #E2E8F0;
+  border-top: 1px solid #e2e8f0;
   width: 100%;
 }
- 
-.popularCard:nth-child(n+5):nth-child(-n+9) {
-  margin-top: 24px;
-} 
 
-.popularCard:nth-child(n+0):nth-child(-n+5) {
-  margin-bottom: 24px;
-} 
-.popularCard {
-  border-left: 1px solid #E2E8F0;
+.popularCard:nth-child(n + 5):nth-child(-n + 9) {
+  margin-top: 24px;
 }
 
-.popularCard:nth-child(1), .popularCard:nth-child(6) {
+.popularCard:nth-child(n + 0):nth-child(-n + 5) {
+  margin-bottom: 24px;
+}
+.popularCard {
+  border-left: 1px solid #e2e8f0;
+}
+
+.popularCard:nth-child(1),
+.popularCard:nth-child(6) {
   border: none;
   padding-left: 0;
   margin-left: 0;

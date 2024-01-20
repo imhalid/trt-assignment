@@ -8,13 +8,13 @@ export default function Hero() {
     <section className={styles.container}>
       <div className={styles.heroContainer}>
         <div className={styles.heroImage}>
-         <Image
+          <Image
             src="/images/hero-b1.jpg"
             alt="Hero Image"
             width={664}
             height={373}
             style={{ objectFit: "cover" }}
-          /> 
+          />
         </div>
         <h1 className={styles.heroTitle}>
           Turkey close to producing its own Covid-19 vaccine
@@ -104,28 +104,30 @@ const secondColumnData = [
   },
   {
     id: 3,
-    title: "Pakistan's Gilgit-Baltistan: Between the Kashmir conflict and China",
+    title:
+      "Pakistan's Gilgit-Baltistan: Between the Kashmir conflict and China",
     imagePath: "/images/hero-s3.png",
   },
 ];
 
 const thirdColumnData = [
-    {
-        id: 1,
-        name: "Carel du Marchie Sarvaas",
-        title: "Why an effective vaccine is just the start of disease control",
-        imagePath: "/images/profile1.jpg",
-    },
-    {
-        id: 2,
-        name: "Giorgio Cafiero",
-        title: "This African nation could be the next to normalise ties with Israel",
-        imagePath: "/images/profile2.jpg",
-    },
-    {
-        id: 3,
-        name: "CJ Werleman",
-        title: "The UAE's alarming reliance on mercenaries",
-        imagePath: "/images/profile3.jpg",
-    }
-]
+  {
+    id: 1,
+    name: "Carel du Marchie Sarvaas",
+    title: "Why an effective vaccine is just the start of disease control",
+    imagePath: "/images/profile1.jpg",
+  },
+  {
+    id: 2,
+    name: "Giorgio Cafiero",
+    title:
+      "This African nation could be the next to normalise ties with Israel",
+    imagePath: "/images/profile2.jpg",
+  },
+  {
+    id: 3,
+    name: "CJ Werleman",
+    title: "The UAE's alarming reliance on mercenaries",
+    imagePath: "/images/profile3.jpg",
+  },
+];
