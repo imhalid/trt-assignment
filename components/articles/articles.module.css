@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid #E1E6EB;
+    padding-top: 24px;
+    margin-top: 24px;
+}
+
+.articlesWrapper {
+    border-right: 1px solid #E1E6EB;
+    padding-right: 24px;
+    margin-right: 24px;
+    width: 100%;
+}

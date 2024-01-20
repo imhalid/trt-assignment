@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #E1E6EB;
+    gap: 24px;
+}
+
+.container:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.articleInfo {
+    font-size: 12px;
+    display: flex;
+    gap: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.articleInfo .category {
+    color: #0089CC;
+}
+
+.articleInfo .date {
+    color: #A0A5AA;
+}
+
+.articleText {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-family: 'serif';
+}
+
+.articleText h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.articleText p {
+    font-size: 16px;
+}
