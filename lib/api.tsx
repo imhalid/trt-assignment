@@ -4,12 +4,12 @@ import ArticlesCard from "@/components/articles/articles-card";
 import BigArticlesCard from "@/components/articles/big-articles-card";
 import Content from "@/types/content.ts";
 
-export const GET_ARTICLES = async (page: number = 1) => {
+export const GET_ARTICLES = async ({ start = 0, end = 16 }) => {
+  console.log(start, end);
   const res = await fetch(
-    `http://localhost:3001/contents?_page=${page}&_per_page=16`
+    `http://localhost:3001/contents?_start=${start}&_end=${end}`
   );
-  const { data } = await res.json();
-  console.log(data.length);
+  const data = await res.json();
   return data.map((article: Content, index: number) => {
     if ((index + 1) % 7 === 0) {
       return <BigArticlesCard key={article.id} data={article} />;

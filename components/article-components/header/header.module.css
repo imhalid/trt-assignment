@@ -1,0 +1,92 @@
+.header {
+  position: relative;
+  background: #005D99;
+  margin: auto;
+  height: 48px;
+  padding: 0 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  align-content: center;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+}
+
+.headerList {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.headerList a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.headerLink {
+  position: relative;
+  gap: 4px;
+}
+
+.headerLink svg {
+  margin-top: 2px;
+}
+
+.headerList li {
+  padding-right: 13px; /* Add space around the border */
+  margin-left: 13px;
+}
+
+.headerList li:last-child {
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.headerLive {
+  position: relative;
+  padding-left: 8px;
+  cursor: pointer;
+}
+
+.headerLive::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #eb0028;
+  border-radius: 50%;
+  left: -0.15rem;
+  top: 50%;
+  transform: translateY(-3px);
+}
+
+.search {
+  background: #0089CC;
+  width: 48px;
+  height: 48px;
+  margin-left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

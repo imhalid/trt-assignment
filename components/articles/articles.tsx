@@ -6,7 +6,7 @@ import { GET_ARTICLES } from "@/lib/api";
 // https://localhost:3001/contents --> 100 articles
 
 export default async function Articles() {
-  const results = await GET_ARTICLES(4);
+  const results = await GET_ARTICLES({ start: 0, end: 16 });
   return (
     <div className={`${styles.container} container`}>
       <div className={styles.articlesWrapper}>{results}</div>
