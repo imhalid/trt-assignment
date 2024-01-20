@@ -9,6 +9,10 @@
   background-color: transparent;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .main {
   display: flex;
   min-height: 100vh;
