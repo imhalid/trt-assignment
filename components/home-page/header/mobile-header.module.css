@@ -28,6 +28,7 @@
   padding: 0 1rem;
   transition: transform 0.3s ease-out; /* animasyon süresini ve türünü belirler */
   transform: translateX(-100%);
+  top: 48px;
 }
 
 .open {

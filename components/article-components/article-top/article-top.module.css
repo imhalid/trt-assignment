@@ -3,6 +3,7 @@
 }
 
 .articleWrapper {
+  width: 100%;
   display: flex;
   margin-top: 40px;
 }
@@ -37,6 +38,12 @@
   border-right: 1px solid #e1e6eb;
   margin-right: 24px;
   padding-right: 24px;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .title {
@@ -79,6 +86,7 @@
 }
 
 .articleContainer {
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 42px;
@@ -91,6 +99,7 @@
 }
 
 .articleContainer .paragraph {
+  width: 100%;
   margin-bottom: 28px;
 }
 
@@ -117,4 +126,44 @@
   color: #22262a;
   text-transform: uppercase;
   font-size: 12px;
+}
+
+@media screen and (width < 75em ) {
+  /* .sideWrapper {
+    display: none;
+  } */
+
+  .articleContainer {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .about {
+    padding-right: 224px;
+  
+  }
+}
+
+@media screen and (width < 62em ) {
+  .column {
+    border-right: none;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .sideWrapper {
+    display: none;
+  }
+
+  .about {
+    padding-right: 0;
+  }
+}
+
+@media screen and (width < 48em ) {
+  .articleContainer {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

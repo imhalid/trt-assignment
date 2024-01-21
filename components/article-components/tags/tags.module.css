@@ -16,3 +16,13 @@
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+
+@media screen and (width < 75em ) {
+  .tags {
+    gap: 8px;
+  }
+  .tag {
+    padding: 4px 6px;
+    font-size: 12px;
+  }
+}

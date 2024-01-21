@@ -6,9 +6,22 @@ import SearchIcon from "@/svgs/search";
 import { HeaderLink } from "@/lib/definitions";
 import MobileHeader from "./mobile-header";
 
-export default function Header() {
+export default function Header({
+  backgroundColor = "#131414",
+  searchIconBackground = "#22262a",
+  divider = true
+}: {
+  backgroundColor?: string;
+  searchIconBackground?: string;
+  divider?: boolean;
+}) {
   return (
-    <nav className={styles.header}>
+    <nav
+      style={{
+        backgroundColor: backgroundColor,
+      }}
+      className={styles.header}
+    >
       <div className={styles.headerContainer}>
         <div>
           <Link href="/">
@@ -18,7 +31,14 @@ export default function Header() {
         <div className={styles.headerRight}>
           <ul className={styles.headerList}>
             {headerLinks.map(({ href, label }) => (
-              <li key={`${label}`}>
+              <li
+                style={{
+                  borderRight: divider
+                    ? `1px solid ${searchIconBackground}`
+                    : "none",
+                }}
+                key={`${label}`}
+              >
                 <Link
                   href={href}
                   className={`${styles.headerLink} ${styles.headerLinkSeparator}`}
@@ -37,18 +57,25 @@ export default function Header() {
               </Link>
             </li>
           </ul>
-          <Link href="/" className={styles.search}>
+          <Link
+            style={{
+              backgroundColor: searchIconBackground,
+            }}
+            href="/"
+            className={styles.search}
+          >
             <SearchIcon width={22} height={22} color="white" />
           </Link>
 
-          <MobileHeader headerLinks={headerLinks} />
+          <MobileHeader
+            headerLinks={headerLinks}
+            backgroundColor={backgroundColor}
+          />
         </div>
       </div>
     </nav>
   );
 }
-
-
 
 const headerLinks: HeaderLink[] = [
   { href: "/", label: "News" },

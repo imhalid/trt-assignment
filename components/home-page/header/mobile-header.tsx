@@ -7,25 +7,34 @@ import CloseIcon from "@/svgs/close";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
+export default function MobileHeader({
+  headerLinks,
+  backgroundColor = "black",
 
-
-export default function MobileHeader({ headerLinks }: { headerLinks: HeaderLink[] }) {
-  
+}: {
+  headerLinks: HeaderLink[];
+  backgroundColor?: string;
+}) {
   const [open, setOpen] = useState(false);
   const toggleOpen = () => setOpen(!open);
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "auto";
   }, [open]);
-    return (
+  return (
     <nav className={styles.mobileHeader}>
-        <button className={styles.mobileHeaderButton} onClick={toggleOpen}>
-      <HamburgerMenu color="white" />
-    </button>
-      <div className={`${styles.mobileMenu} ${open ? styles.open : ""}`}>
-        <button className={styles.closeButton} onClick={toggleOpen}>
-            <CloseIcon color="white" />
-        </button>
+      <button className={styles.mobileHeaderButton} onClick={toggleOpen}>
+        <HamburgerMenu color="white" />
+      </button>
+      <div
+        style={{
+          backgroundColor: backgroundColor,
+        }}
+        className={`${styles.mobileMenu} ${open ? styles.open : ""}`}
+      >
+        {/* <button className={styles.closeButton} onClick={toggleOpen}>
+          <CloseIcon color="white" />
+        </button> */}
         <ul className={styles.mobileMenuList}>
           {headerLinks.map(({ href, label }) => (
             <li key={`${label}`}>
@@ -47,6 +56,6 @@ export default function MobileHeader({ headerLinks }: { headerLinks: HeaderLink[
           </li>
         </ul>
       </div>
-    </nav> 
+    </nav>
   );
 }

@@ -52,7 +52,6 @@
 }
 
 .headerList li {
-  border-right: 1px solid #22262a; /* Change color as needed */
   padding-right: 13px; /* Add space around the border */
   margin-left: 13px;
 }
@@ -82,7 +81,6 @@
 }
 
 .search {
-  background: #22262a;
   width: 48px;
   height: 48px;
   margin-left: 40px;
