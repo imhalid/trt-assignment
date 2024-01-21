@@ -1,8 +1,8 @@
 "use server";
 
-import ArticlesCard from "@/components/home-page/articles/articles-card";
-import BigArticlesCard from "@/components/home-page/articles/big-articles-card";
-import Journal from "@/components/home-page/journal/journal";
+import ArticlesCard from "@/components/home-page-components/articles/articles-card";
+import BigArticlesCard from "@/components/home-page-components/articles/big-articles-card";
+import Journal from "@/components/home-page-components/journal/journal";
 import db from '@/db.json'
 
 import { Content } from "@/lib/definitions";

@@ -1,4 +1,4 @@
-import Header from "@/components/home-page/header/header"
+import Header from "@/components/home-page-components/header/header"
 import Article from "@/components/article-components/article/article"
 import type { Metadata } from "next";
 
