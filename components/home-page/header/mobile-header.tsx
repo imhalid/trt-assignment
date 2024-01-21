@@ -19,7 +19,7 @@ export default function MobileHeader({
   const toggleOpen = () => setOpen(!open);
 
   useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "auto";
+    document.body.style.overflow = open ? "hidden" : "";
   }, [open]);
   return (
     <nav className={styles.mobileHeader}>

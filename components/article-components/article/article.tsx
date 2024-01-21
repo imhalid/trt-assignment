@@ -1,11 +1,11 @@
-import styles from "./article-top.module.css";
+import styles from "./article.module.css";
 import Image from "next/image";
 import EmbedVideo from "../embed-video/embed-video";
 import ReadMore from "../read-more/read-more";
 import ContinueReading from "../continue-reading/continue-reading";
 import Tags from "../tags/tags";
 import RelatedArticles from "../related-articles/related-articles";
-export default function ArticleTop() {
+export default function Article() {
   return (
     <div className={`${styles.container}`}>
       <div className={styles.catDate}>
