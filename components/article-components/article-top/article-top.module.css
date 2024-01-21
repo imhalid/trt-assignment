@@ -1,0 +1,261 @@
+.container {
+  margin-top: 64px;
+}
+
+.articleWrapper {
+  display: flex;
+}
+
+.catDate {
+  display: flex;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  gap: 8px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #e1e6eb;
+  margin-right: 24px;
+  padding-right: 24px;
+}
+
+.category {
+  color: #0089cc;
+  font-weight: bold;
+}
+
+.date {
+  color: #a0a5aa;
+}
+
+.title {
+  color: #000;
+  font-family: "Noto Serif";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px; /* 123.81% */
+  letter-spacing: -1px;
+}
+
+.description {
+  color: var(--Ink-30, #63676c);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Noto Serif";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 150% */
+}
+
+.imageInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+.imageSource {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #a0a5aa;
+}
+
+.imageCaption {
+  font-size: 14px;
+  color: #63676c;
+}
+
+.articleContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 42px;
+  padding-left: 172px;
+  padding-right: 172px;
+}
+
+.articleContainer .paragraph {
+  margin-bottom: 28px;
+  font-family: "Noto Serif";
+}
+
+.articleContainer h2 {
+  color: #000;
+font-family: "Noto Serif";
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px; /* 142.857% */
+margin-bottom: 28px;
+}
+
+
+.tags {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  color: #777c80;
+}
+
+.tag {
+  background-color: #edf2f7;
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-size: 14px;
+  align-items: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.relatedArticle {
+  display: flex;
+  gap: 12px;
+  border-top: 1px solid #E1E6EB;
+  margin-top: 24px;
+  padding-top: 24px;
+  align-items: center;
+}
+
+.relatedArticleTitle {
+  color: #000;
+  font-family: "Noto Serif";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  text-transform: capitalize;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  margin-bottom: 42px;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.readMore {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 28px;
+  gap: 16px;
+  margin-bottom: 42px;
+}
+
+.readMore p {
+  color:  #161819;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: 'system-ui';
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: 16px; /* 133.333% */
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+
+.readMore h3 {
+color: #000;
+font-family: "Noto Serif";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px; /* 133.333% */
+margin-top: 8px;
+}
+
+.readMore:before {
+  content: "";
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  background-color: #00BAFF;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  transform: translateY(-50%);
+}
+
+.articleSource {
+    font-family: 'system-ui';
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: .75rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+}
+
+.sourceTitle {
+  color: #a0a5aa;
+}
+
+.sourceName {
+  margin-left: 8px;
+    color: #22262a;
+}
+
+.hr {
+  border-top: 1px solid #E1E6EB;
+  margin-top: 24px;
+  padding-top: 24px;
+}
+
+.nextArticleWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.nextArticleWrapper span {
+  color: var(--Ink-50, #22262A);
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: 'system-ui';
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 150% */
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+
+.nextArticle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 28px;
+  gap: 16px;
+  margin-bottom: 42px;
+}
+
+.nextArticle h3 {
+color: #000;
+font-family: "Noto Serif";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px; /* 133.333% */
+margin-top: 8px;
+}
+
+.nextArticle:before {
+  content: "";
+  position: absolute;
+  width: 144px;
+  height: 144px;
+  background-color: #00BAFF;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  transform: translateY(-50%);
+}
