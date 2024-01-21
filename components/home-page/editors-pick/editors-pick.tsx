@@ -8,7 +8,7 @@ export default function EditorsPick() {
       <div className={styles.wrapper}>
         <div className={styles.imageWrapper}>
           <Image
-            src="/images/editors-pick.jpg"
+            src="/images/home-page/editors-pick.jpg"
             alt="Picture of the author"
             width={382}
             height={382}
