@@ -1,0 +1,50 @@
+.mobileHeader {
+  display: flex;
+  align-items: center;
+}
+
+.mobileMenu a {
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  margin: 1rem;
+}
+
+.close {
+  transform: translateX(-100%);
+}
+
+.mobileMenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
+  transition: transform 0.3s ease-out; /* animasyon süresini ve türünü belirler */
+  transform: translateX(-100%);
+}
+
+.open {
+  transform: translateX(0);
+}
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media screen and (width > 62em) {
+  .mobileHeader {
+    display: none;
+  }
+}

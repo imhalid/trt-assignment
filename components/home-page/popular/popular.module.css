@@ -90,14 +90,11 @@
   margin-left: 0;
 }
 
-@media screen and (width <= 75em) {
+@media screen and (width < 75em) {
   .popularBackground {
     background: #edf2f7;
-    margin-right: calc(480px - 50vw); /*  half o the container all viewport  */
-    margin-left: calc(480px - 50vw);
-    margin-top: 48px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    margin-right: calc(457px - 50vw); /*  half o the container all viewport  */
+    margin-left: calc(457px - 50vw);
   }
 
   .popularCard {
@@ -122,15 +119,15 @@
   .popularContainer {
     flex-direction: row;
     flex-wrap: nowrap;
-    overflow-x: auto; 
-    scroll-snap-type: x mandatory; 
-    scroll-padding: 10px; 
-    -ms-overflow-style: none; 
-    scrollbar-width: none; 
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 10px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 
   .popularContainer > div {
-    scroll-snap-align: start; 
+    scroll-snap-align: start;
   }
 
   .popularContainer::-webkit-scrollbar {
@@ -138,19 +135,18 @@
   }
 }
 
-@media screen and (width <= 62em) {
+@media screen and (width < 62em) {
   .popularBackground {
     background: #edf2f7;
-    margin-right: calc(360px - 50vw); /*  half o the container all viewport  */
-    margin-left: calc(360px - 50vw);
+    margin-right: calc(335px - 50vw); /*  half o the container all viewport  */
+    margin-left: calc(335px - 50vw);
   }
 }
-
 
 @media screen and (width <= 48em) {
   .popularBackground {
     background: #edf2f7;
-    margin-right: calc(270px - 50vw); /*  half o the container all viewport  */
-    margin-left: calc(270px - 50vw);
+    margin-right: calc(245px - 50vw); /*  half o the container all viewport  */
+    margin-left: calc(245px - 50vw);
   }
 }

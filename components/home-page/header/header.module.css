@@ -51,8 +51,6 @@
   gap: 4px;
 }
 
-
-
 .headerList li {
   border-right: 1px solid #22262a; /* Change color as needed */
   padding-right: 13px; /* Add space around the border */
@@ -91,4 +89,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (width < 62em) {
+  .headerList {
+    display: none;
+  }
+
+  .search {
+    background: transparent;
+    width: 48px;
+    height: 48px;
+    margin-left: 0px;
+    margin-right: 0.5rem;
+  }
+
+  .header {
+    padding: 0 1.5rem;
+  }
+}
+
+@media screen and (width < 75em) {
+  .header {
+    padding: 0 3rem;
+  }
 }

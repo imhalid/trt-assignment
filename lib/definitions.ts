@@ -29,6 +29,11 @@ export type RelatedArticlesProps = {
   relatedArticles: Article[];
 };
 
+export type HeaderLink = {
+  href: string;
+  label: string;
+};
+
 export interface Content {
   id: string;
   type: string;

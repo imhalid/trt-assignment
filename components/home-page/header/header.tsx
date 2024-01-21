@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import DropdownIcon from "@/svgs/dropdown";
 import SearchIcon from "@/svgs/search";
+import { HeaderLink } from "@/lib/definitions";
+import MobileHeader from "./mobile-header";
 
 export default function Header() {
   return (
@@ -38,16 +40,15 @@ export default function Header() {
           <Link href="/" className={styles.search}>
             <SearchIcon width={22} height={22} color="white" />
           </Link>
+
+          <MobileHeader headerLinks={headerLinks} />
         </div>
       </div>
     </nav>
   );
 }
 
-type HeaderLink = {
-  href: string;
-  label: string;
-};
+
 
 const headerLinks: HeaderLink[] = [
   { href: "/", label: "News" },

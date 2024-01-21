@@ -3,8 +3,6 @@
   position: relative;
 }
 
-
-
 .imageWrapper {
   position: relative;
   width: 100%;
@@ -57,7 +55,7 @@
   padding-bottom: 12px;
 }
 
-@media screen and (width <= 75em) {
+@media screen and (width < 75em) {
   .container {
     display: none;
   }
