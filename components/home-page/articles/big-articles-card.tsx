@@ -1,7 +1,7 @@
 import styles from "./big-articles-card.module.css";
 
 import Image from "next/image";
-import { Content, Category } from "@/types/content.ts";
+import { Content } from "@/lib/definitions";
 
 export default function BigArticlesCard({ data }: { data: Content }) {
   const newImageUrl = data.mainImageUrl.replace(

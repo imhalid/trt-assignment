@@ -1,7 +1,7 @@
 "use server";
 
-import ArticlesCard from "@/components/articles/articles-card";
-import BigArticlesCard from "@/components/articles/big-articles-card";
+import ArticlesCard from "@/components/home-page/articles/articles-card";
+import BigArticlesCard from "@/components/home-page/articles/big-articles-card";
 import Content from "@/types/content.ts";
 
 export const GET_ARTICLES = async ({ start = 0, end = 16 }) => {

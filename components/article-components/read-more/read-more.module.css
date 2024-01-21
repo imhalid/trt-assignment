@@ -1,0 +1,42 @@
+.readMore {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 28px;
+  gap: 16px;
+  margin-bottom: 42px;
+}
+
+.readMore p {
+  color:  #161819;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: 'system-ui';
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: 16px; /* 133.333% */
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+
+.readMore h3 {
+color: #000;
+font-family: "Noto Serif";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px; /* 133.333% */
+margin-top: 8px;
+}
+
+.readMore:before {
+  content: "";
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  background-color: #00BAFF;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  transform: translateY(-50%);
+}

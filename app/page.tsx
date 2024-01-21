@@ -1,9 +1,9 @@
-import TopicHeader from "@/components/topic-header/topic-header";
-import Hero from "@/components/hero-content/hero";
-import Popular from "@/components/popular/popular";
-import Articles from "@/components/articles/articles";
-import Pagination from "@/components/pagination/pagination";
-import Header from "@/components/header/header";
+import TopicHeader from "@/components/home-page/topic-header/topic-header";
+import Hero from "@/components/home-page/hero-content/hero";
+import Popular from "@/components/home-page/popular/popular";
+import Articles from "@/components/home-page/articles/articles";
+import Pagination from "@/components/home-page/pagination/pagination";
+import Header from "@/components/home-page/header/header";
 export default function Home({
   searchParams,
 }: {

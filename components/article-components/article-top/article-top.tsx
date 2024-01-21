@@ -1,6 +1,10 @@
 import styles from "./article-top.module.css";
 import Image from "next/image";
-
+import EmbedVideo from "../embed-video/embed-video";
+import ReadMore from "../read-more/read-more";
+import ContinueReading from "../continue-reading/continue-reading";
+import Tags from "../tags/tags";
+import RelatedArticles from "../related-articles/related-articles";
 export default function ArticleTop() {
   return (
     <div className={`${styles.container}`}>
@@ -55,14 +59,7 @@ export default function ArticleTop() {
               future of Trump, said Michael McDonald of the University of
               Florida, who administers the project.
             </p>
-            <div className={styles.videoWrapper}>
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/-DUN-C2kbKU"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              ></iframe>
-            </div>
+            <EmbedVideo src="https://www.youtube.com/embed/-DUN-C2kbKU" />
             <h2>Record Turnout?</h2>
             <p className={styles.paragraph}>
               &apos;We&apos;ve never seen this many people voting so far ahead
@@ -98,21 +95,11 @@ export default function ArticleTop() {
               representing an increase from one in five of all ballots cast to
               two in five of all ballots cast.
             </p>
-            <div className={styles.readMore}>
-              <Image
-                src="/images/article-page/read-more-1.jpg"
-                width={212}
-                height={120}
-                alt="article top image"
-              />
-              <div className={styles.readMoreText}>
-                <p>Read More</p>
-                <h3>
-                  Trump urges &apos;vote by mail&apos; in Florida in reversal of
-                  his earlier stance
-                </h3>
-              </div>
-            </div>
+            <ReadMore
+              imageUrl="/images/article-page/read-more-1.jpg"
+              altText="article top image"
+              title="Trump urges 'vote by mail' in Florida in reversal of his earlier stance"
+            />
             <p className={styles.paragraph}>
               Trump has repeatedly railed against mail-in voting, making
               unfounded accusations that it leads to fraud. Experts say fraud is
@@ -137,18 +124,11 @@ export default function ArticleTop() {
               percent of Republicans. About 58 percent of Democrats planned to
               vote early compared to 40 percent of Republicans.
             </p>
-            <div className={styles.readMore}>
-              <Image
-                src="/images/article-page/read-more-2.jpg"
-                width={212}
-                height={120}
-                alt="article top image"
-              />
-              <div className={styles.readMoreText}>
-                <p>Read More</p>
-                <h3>Biden, Trump in fiery first US presidential debate</h3>
-              </div>
-            </div>
+            <ReadMore
+              imageUrl="/images/article-page/read-more-2.jpg"
+              altText="article top image"
+              title="Trump, Biden clash in chaotic first debate"
+            />
             <p className={styles.paragraph}>
               McDonald said early voting typically starts strong, then drops
               before surging just ahead of the election. But in some states, the
@@ -160,15 +140,8 @@ export default function ArticleTop() {
               Virginia and nearly 15 percent of total 2016 turnout in the
               battleground state of Wisconsin.
             </p>
-            <div className={styles.videoWrapper}>
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/jLkDkkPauqk?si=Pa007Go5HmFpG2ID"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              ></iframe>
-            </div>
+
+            <EmbedVideo src="https://www.youtube.com/embed/jLkDkkPauqk" />
             <p className={styles.paragraph}>
               &quot;That&apos;s just nuts,&quot; McDonald said. &quot;Every
               piece of data suggests very high turnout for this election. I
@@ -178,53 +151,19 @@ export default function ArticleTop() {
               <span className={styles.sourceTitle}>Source:</span>
               <span className={styles.sourceName}>Reuters</span>
             </div>
-						<hr className={styles.hr} />
-            <div className={styles.nextArticleWrapper}>
-              <span>continue reading</span>
-              <div className={styles.nextArticle}>
-                <Image
-                  src="/images/article-page/side-1.jpg"
-                  width={212}
-                  height={120}
-                  alt="article top image"
-                />
-                <div className={styles.nextArticleText}>
-                  <div className={styles.catDate}>
-                    <p className={styles.category}>Americas</p>
-                    <p className={styles.date}>30 JAN 2020</p>
-                  </div>
-                  <h3>
-                    Is Bernie Sanders actually revolutionary and what does he
-                    stand for?
-                  </h3>
-                </div>
-              </div>
-            </div>
+            <hr className={styles.hr} />
+            <ContinueReading
+              imageUrl="/images/article-page/side-1.jpg"
+              category="Americas"
+              date="30 JAN 2020"
+							title="Is Bernie Sanders actually revolutionary and what does he stand for?"
+							altText="Bernie Sanders image"
+            />
           </div>
         </div>
         <div className={styles.sideWrapper}>
-          <div className={styles.tags}>
-            {tags.map((tag, index) => (
-              <p key={index} className={styles.tag}>
-                {tag}
-              </p>
-            ))}
-          </div>
-
-          <div className={styles.relatedContainer}>
-            {relatedArticles.map((article) => (
-              <div key={article.id} className={styles.relatedArticle}>
-                <Image
-                  src={article.imagePath}
-                  width={120}
-                  height={120}
-                  alt="related article image"
-                  style={{ objectFit: "cover" }}
-                />
-                <p className={styles.relatedArticleTitle}>{article.title}</p>
-              </div>
-            ))}
-          </div>
+					<Tags tags={tags} />
+					<RelatedArticles relatedArticles={relatedArticles} />
         </div>
       </div>
     </div>
