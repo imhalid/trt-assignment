@@ -1,4 +1,3 @@
-import { div } from "three/examples/jsm/nodes/Nodes.js";
 import styles from "./popular.module.css";
 import db from "@/db.json";
 export default function Popular() {
