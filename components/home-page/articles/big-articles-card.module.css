@@ -17,10 +17,12 @@
 .articleInfo {
   font-size: 12px;
   display: flex;
+  font-family: var(--trt);
   gap: 8px;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 12px;
+  font-weight: 500;
 }
 
 .articleInfo .category {
@@ -35,7 +37,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  font-family: "serif";
+  font-family: var(--noto-serif);
 }
 
 .articleText h3 {

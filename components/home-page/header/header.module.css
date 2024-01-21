@@ -10,7 +10,8 @@
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 1px;
-  font-weight: bold;
+  font-family: var(--trt);
+  font-weight: 700;
   align-content: center;
 }
 
@@ -49,9 +50,7 @@
   gap: 4px;
 }
 
-.headerLink svg {
-  margin-top: 2px;
-}
+
 
 .headerList li {
   border-right: 1px solid #22262a; /* Change color as needed */

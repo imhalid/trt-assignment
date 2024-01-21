@@ -1,8 +1,47 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const trtFont = localFont({
+  src: [
+    {
+      path: "/fonts/TRTRegular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "/fonts/TRTMedium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "/fonts/TRTBold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  display: "swap",
+  preload: true,
+  variable: "--trt",
+});
+
+const NotoSerif = localFont({
+  src: [
+    {
+      path: "/fonts/NotoSerif-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "/fonts/NotoSerif-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  display: "swap",
+  preload: true,
+  variable: "--noto-serif",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +55,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={trtFont.variable + " " + NotoSerif.variable}>
         {children}
       </body>
     </html>

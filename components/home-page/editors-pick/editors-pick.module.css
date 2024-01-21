@@ -38,7 +38,7 @@
   padding: 32px;
   text-shadow: 0px 12.522px 10.017px rgba(0, 0, 0, 0.04),
     0px 100px 80px rgba(0, 0, 0, 0.07);
-  font-family: "Noto Serif";
+  font-family: var(--noto-serif);
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -48,8 +48,7 @@
 
 .container h2 {
   color: #22262a;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: "system-ui";
+  font-family: var(--trt);
   font-size: 16px;
   font-style: normal;
   font-weight: 700;

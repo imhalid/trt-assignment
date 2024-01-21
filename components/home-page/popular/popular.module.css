@@ -17,8 +17,7 @@
 
 .title {
   color: #005d99;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: "system-ui";
+  font-family: var(--trt);
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -29,11 +28,10 @@
 
 .popularCardText p {
   color: #0089cc;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: "system-ui";
+  font-family: var(--trt);
   font-size: 12px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 16px; /* 133.333% */
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -41,8 +39,7 @@
 
 .popularCardText h2 {
   color: #22262a;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: "Times New Roman";
+  font-family: var(--noto-serif);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -62,13 +59,12 @@
 .popularCard span {
   color: #005d99;
   text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: "system-ui";
+  font-family: var(--trt);
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  padding-top: 18px;
+  padding-top: 16px;
   padding-right: 16px;
 }
 
