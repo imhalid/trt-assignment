@@ -24,7 +24,7 @@ export const GET_ARTICLES = async ({ start = 0, end = 16 }) => {
   }
 
   return data.map((article: Content, index: number) => {
-    if ((index + 1) % 7 === 0) {
+    if ((index + 1) % 8 === 0) {
       return <BigArticlesCard key={article.id} data={article} />;
     } else if (index === 3) {
       return <Journal key={article.id} />;

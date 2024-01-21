@@ -150,3 +150,12 @@
     margin-left: calc(245px - 50vw);
   }
 }
+
+@media screen and (width <= 36em) {
+  .popularBackground {
+    background: #edf2f7;
+    margin-right: calc(200px - 50vw); /*  half o the container all viewport  */
+    margin-left: calc(200px - 50vw);
+  }
+}
+
