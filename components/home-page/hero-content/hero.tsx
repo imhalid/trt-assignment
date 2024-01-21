@@ -28,7 +28,6 @@ export default function Hero() {
           pilot production of these vaccines.&quot;
         </p>
       </div>
-      {/* Second Column */}
       <div className={styles.secondaryContainer}>
         {secondColumnData.map((item) => (
           <div className={styles.secondaryItem} key={item.id}>
@@ -51,7 +50,6 @@ export default function Hero() {
           </h3>
         </div>
       </div>
-      {/* Thirty Column */}
       <div className={styles.thirtyContainer}>
         <div>
           <div className={styles.dailyVideo}>
