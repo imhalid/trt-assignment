@@ -27,3 +27,10 @@
     margin-right: 0;
   }
 }
+
+@media screen and (width <= 48em) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
