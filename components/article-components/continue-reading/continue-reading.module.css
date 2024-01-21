@@ -64,3 +64,18 @@ margin-top: 8px;
   z-index: -1;
   transform: translateY(-50%);
 }
+
+@media screen and (width < 36em ) {
+  .nextArticle {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+  }
+
+  .nextArticle img {
+    display: none;
+  }
+  .nextArticle:before {
+    display: none;
+  }
+}
