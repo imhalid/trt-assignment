@@ -9,7 +9,7 @@ export default function Hero() {
       <div className={styles.heroContainer}>
         <div className={styles.heroImage}>
           <Image
-            src="/images/hero-b1.jpg"
+            src="/images/home-page/hero-b1.jpg"
             alt="Hero Image"
             width={664}
             height={373}
@@ -56,7 +56,7 @@ export default function Hero() {
         <div>
           <div className={styles.dailyVideo}>
             <Image
-              src="/images/hero-s2.png"
+              src="/images/home-page/hero-s2.png"
               alt="Hero Image"
               width={296}
               height={166}
@@ -96,20 +96,20 @@ const secondColumnData = [
   {
     id: 1,
     title: "There’s a second wave of Covid-19 coming, and it could be rough",
-    imagePath: "/images/hero-s1.jpg",
+    imagePath: "/images/home-page/hero-s1.jpg",
     href: "/",
   },
   {
     id: 2,
     title: "Iran’s #MeToo opens long-overdue discussion on sexual abuse",
-    imagePath: "/images/hero-s4.png",
+    imagePath: "/images/home-page/hero-s4.png",
     href: "/",
   },
   {
     id: 3,
     title:
       "Pakistan's Gilgit-Baltistan: Between the Kashmir conflict and China",
-    imagePath: "/images/hero-s3.png",
+    imagePath: "/images/home-page/hero-s3.png",
   },
 ];
 
@@ -118,19 +118,19 @@ const thirdColumnData = [
     id: 1,
     name: "Carel du Marchie Sarvaas",
     title: "Why an effective vaccine is just the start of disease control",
-    imagePath: "/images/profile1.jpg",
+    imagePath: "/images/home-page/profile1.jpg",
   },
   {
     id: 2,
     name: "Giorgio Cafiero",
     title:
       "This African nation could be the next to normalise ties with Israel",
-    imagePath: "/images/profile2.jpg",
+    imagePath: "/images/home-page/profile2.jpg",
   },
   {
     id: 3,
     name: "CJ Werleman",
     title: "The UAE's alarming reliance on mercenaries",
-    imagePath: "/images/profile3.jpg",
+    imagePath: "/images/home-page/profile3.jpg",
   },
 ];
