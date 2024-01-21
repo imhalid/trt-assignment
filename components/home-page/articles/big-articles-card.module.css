@@ -49,3 +49,11 @@
 .articleText p {
   font-size: 16px;
 }
+
+@media screen and (width <= 75em) {
+  .container img {
+    width: 100%;
+  }
+}
+
+

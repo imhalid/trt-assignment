@@ -4,11 +4,13 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   gap: 8px;
+  font-family: var(--trt);
+  font-weight: 500;
 }
 
 .category {
   color: #0089cc;
-  font-weight: bold;
+
 }
 
 .date {
@@ -22,9 +24,8 @@
 }
 
 .nextArticleWrapper span {
-  color: var(--Ink-50, #22262A);
-font-feature-settings: 'clig' off, 'liga' off;
-font-family: 'system-ui';
+  color:  #22262A;
+font-family: var(--trt);
 font-size: 16px;
 font-style: normal;
 font-weight: 700;
@@ -44,7 +45,7 @@ text-transform: uppercase;
 
 .nextArticle h3 {
 color: #000;
-font-family: "Noto Serif";
+font-family: var(--noto-serif);
 font-size: 24px;
 font-style: normal;
 font-weight: 700;

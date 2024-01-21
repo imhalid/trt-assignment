@@ -151,7 +151,7 @@ export default function ArticleTop() {
               <span className={styles.sourceTitle}>Source:</span>
               <span className={styles.sourceName}>Reuters</span>
             </div>
-            <hr className={styles.hr} />
+            <hr className='topBorder' />
             <ContinueReading
               imageUrl="/images/article-page/side-1.jpg"
               category="Americas"

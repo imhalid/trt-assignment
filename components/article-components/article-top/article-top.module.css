@@ -8,6 +8,8 @@
 }
 
 .catDate {
+  font-family: var(--trt);
+  font-weight: 700;
   display: flex;
   font-size: 12px;
   letter-spacing: 1px;
@@ -17,7 +19,6 @@
 
 .category {
   color: #0089cc;
-  font-weight: bold;
 }
 
 .date {
@@ -27,6 +28,7 @@
 .about {
   padding-right: 344px;
   margin-top: 20px;
+  font-family: var(--noto-serif);
 }
 
 .column {
@@ -35,13 +37,10 @@
   border-right: 1px solid #e1e6eb;
   margin-right: 24px;
   padding-right: 24px;
-  
 }
-
 
 .title {
   color: #000;
-  font-family: "Noto Serif";
   font-size: 42px;
   font-style: normal;
   font-weight: 700;
@@ -50,13 +49,12 @@
 }
 
 .description {
-  color: var(--Ink-30, #63676c);
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: "Noto Serif";
+  color: #63676c;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 36px; /* 150% */
+  margin-top: 20px;
 }
 
 .imageInfo {
@@ -65,13 +63,17 @@
   gap: 8px;
   margin-top: 16px;
 }
+
 .imageSource {
+  font-family: var(--trt);
   font-size: 12px;
   letter-spacing: 1px;
+  font-weight: 500;
   color: #a0a5aa;
 }
 
 .imageCaption {
+  font-family: var(--noto-serif);
   font-size: 14px;
   color: #63676c;
 }
@@ -82,34 +84,37 @@
   margin-top: 42px;
   padding-left: 172px;
   padding-right: 172px;
+  font-family: var(--noto-serif);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
 }
 
 .articleContainer .paragraph {
   margin-bottom: 28px;
-  font-family: "Noto Serif";
 }
 
 .articleContainer h2 {
-  color: #000;
-font-family: "Noto Serif";
-font-size: 28px;
-font-style: normal;
-font-weight: 700;
-line-height: 40px; /* 142.857% */
-margin-bottom: 28px;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 142.857% */
+  margin-bottom: 28px;
 }
 
 .sourceTitle {
+  font-family: var(--trt);
+  font-weight: 700;
   color: #a0a5aa;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 .sourceName {
+  font-family: var(--trt);
+  font-weight: 700;
   margin-left: 8px;
-    color: #22262a;
-}
-
-.hr {
-  border-top: 1px solid #E1E6EB;
-  margin-top: 24px;
-  padding-top: 24px;
+  color: #22262a;
+  text-transform: uppercase;
+  font-size: 12px;
 }

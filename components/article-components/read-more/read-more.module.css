@@ -9,11 +9,10 @@
 
 .readMore p {
   color:  #161819;
-font-feature-settings: 'clig' off, 'liga' off;
-font-family: 'system-ui';
+font-family: var(--trt);
 font-size: 12px;
 font-style: normal;
-font-weight: 600;
+font-weight: 500;
 line-height: 16px; /* 133.333% */
 letter-spacing: 1px;
 text-transform: uppercase;
@@ -21,7 +20,7 @@ text-transform: uppercase;
 
 .readMore h3 {
 color: #000;
-font-family: "Noto Serif";
+font-family: var(--noto-serif );
 font-size: 24px;
 font-style: normal;
 font-weight: 700;

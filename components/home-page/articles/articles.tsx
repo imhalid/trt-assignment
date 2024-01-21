@@ -1,9 +1,6 @@
-import styles from "./articles.module.css";
-import Image from "next/image";
-import ArticlesCard from "./articles-card";
+import styles from "./articles.module.css";;
 import EditorsPick from "../editors-pick/editors-pick";
 import { GET_ARTICLES } from "@/lib/api";
-// https://localhost:3001/contents --> 100 articles
 
 export default async function Articles() {
   const results = await GET_ARTICLES({ start: 0, end: 16 });

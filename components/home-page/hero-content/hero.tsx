@@ -54,18 +54,21 @@ export default function Hero() {
       {/* Thirty Column */}
       <div className={styles.thirtyContainer}>
         <div>
-          <Image
-            src="/images/hero-s2.png"
-            alt="Hero Image"
-            width={296}
-            height={166}
-            style={{ objectFit: "cover" }}
-          />
-          <div className={styles.videoInformation}>
-            <SmallPlayIcon />
-            <p className={styles.videoTime}>5:53</p>
+          <div className={styles.dailyVideo}>
+            <Image
+              src="/images/hero-s2.png"
+              alt="Hero Image"
+              width={296}
+              height={166}
+              style={{ objectFit: "cover" }}
+            />
+            <div className={styles.videoInformation}>
+              <SmallPlayIcon />
+              <p className={styles.videoTime}>5:53</p>
+            </div>
+            <h3>Why do we smell things?</h3>
           </div>
-          <h3>Why do we smell things?</h3>
+
           {thirdColumnData.map((item) => (
             <div className={styles.thirtyItem} key={item.id}>
               <div className={styles.thirtyImage}>

@@ -6,7 +6,7 @@ export default function RelatedArticles({ relatedArticles }: RelatedArticlesProp
   return (
     <div className={styles.relatedContainer}>
       {relatedArticles.map((article) => (
-        <div key={article.id} className={styles.relatedArticle}>
+        <div key={article.id} className={`${styles.relatedArticle} topBorder`}>
           <Image
             src={article.imagePath}
             width={120}

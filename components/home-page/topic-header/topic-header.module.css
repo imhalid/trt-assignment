@@ -1,5 +1,4 @@
 .topics {
-  margin-top: 32px;
   margin-bottom: 32px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -40,4 +39,10 @@
 
 .topics li:first-child {
   margin-left: 0;
+}
+
+@media screen and (width <= 62em) {
+  .topics {
+    display: none;  
+  }
 }

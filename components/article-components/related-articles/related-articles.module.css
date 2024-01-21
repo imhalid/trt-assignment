@@ -1,16 +1,12 @@
-
 .relatedArticle {
   display: flex;
   gap: 12px;
-  border-top: 1px solid #E1E6EB;
-  margin-top: 24px;
-  padding-top: 24px;
   align-items: center;
 }
 
 .relatedArticleTitle {
   color: #000;
-  font-family: "Noto Serif";
+  font-family: var(--noto-serif);
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -19,10 +15,10 @@
 }
 
 .articleSource {
-    font-family: 'system-ui';
-    letter-spacing: 1px;
-    font-weight: 700;
-    font-size: .75rem;
-    line-height: 1rem;
-    text-transform: uppercase;
+  font-family: "system-ui";
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-transform: uppercase;
 }

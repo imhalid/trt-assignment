@@ -6,8 +6,7 @@
 .heroContainer {
   flex: 0 0 50%;
   max-width: 50%;
-  border-right: 1px solid;
-  border-color: #e1e6eb;
+  border-right: 1px solid #e1e6eb;
   padding-right: 24px;
   position: relative;
   width: 100%;
@@ -92,6 +91,51 @@
   flex: 0 0 25%;
   max-width: 25%;
   padding-left: 24px;
+}
+
+@media screen and (width <= 75em) {
+  .heroContainer {
+    flex: 0 0 100%;
+    max-width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e1e6eb;
+    padding-right: 0;
+    padding-bottom: 24px;
+  }
+
+  .secondaryContainer {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 24px;
+  }
+
+  .thirtyContainer {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 24px;
+  }
+}
+
+@media screen and (width <= 48em) {
+  .secondaryContainer {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 24px;
+  }
+
+  .thirtyContainer {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 24px;
+  }
+
+  .secondaryContainer {
+    border-right: none;
+    border-bottom: 1px solid #e1e6eb;
+    padding-right: 0;
+    padding-bottom: 24px;
+  }
+  
 }
 
 .videoTime {
