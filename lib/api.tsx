@@ -3,15 +3,26 @@
 import ArticlesCard from "@/components/home-page/articles/articles-card";
 import BigArticlesCard from "@/components/home-page/articles/big-articles-card";
 import Journal from "@/components/home-page/journal/journal";
+import db from '@/db.json'
 
 import { Content } from "@/lib/definitions";
 
 export const GET_ARTICLES = async ({ start = 0, end = 16 }) => {
   console.log(start, end);
-  const res = await fetch(
-    `http://localhost:3001/contents?_start=${start}&_end=${end}`
-  );
-  const data = await res.json();
+  let data: Content[];
+  try {
+    const res = await fetch(
+      `http://localhost:3001/contents?_start=${start}&_end=${end}`
+    );
+    data = await res.json();
+  } catch (error) {
+    console.error("Failed to fetch from API, using local data instead.", error);
+    data = db.contents.slice(start, end).map((article) => ({
+      ...article,
+      id: article.id.toString(),
+    }));
+  }
+
   return data.map((article: Content, index: number) => {
     if ((index + 1) % 7 === 0) {
       return <BigArticlesCard key={article.id} data={article} />;
